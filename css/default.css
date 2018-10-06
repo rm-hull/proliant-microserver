@@ -1,0 +1,1358 @@
+body {
+	background-color:#fff;
+	margin:0px;
+	padding:0px;
+}
+/*  avoid styling the span tag wrt any font settings.  */
+body, th, td, div, p, button, select, input {
+	font-family:Arial,sans-serif;
+}
+
+body,td,input,button,th,caption {
+	font-size:70%;
+}
+* html body,* html td,* html input,* html button,* html th {
+	font-size:67%;
+}
+select {
+	font-size:100%;
+}
+
+/*  percentage fonts must be used carefully */
+/* for ie we dont want to set body td, body th, back to 100%, as these dont properly inherit from the body in the first place.  */
+/*  oddly enough though, td does inherit from div in IE, although not from anything else.*/
+div td,body input, body button,
+td input, td button, th input, th button, 
+body div,body table, body td, body th, body caption{
+	font-size:100%;
+}
+
+body,td,p {
+	color:#000;
+}
+h1,h2,h3,h4,h5 {	
+	margin:5px 0px 10px 0px;
+	color:#000;
+}
+h1 {font-size:180%;font-weight:normal;}
+h2 {font-size:170%;font-weight:normal;}
+h3 {font-size:150%;}
+h4 {font-size:130%;}
+h5 {font-size:100%;}
+
+hr {
+	border:0px;
+	height:1px;
+	overflow:hidden;
+	color:#999;
+	background-color:#999;
+	margin-top:6px;
+	margin-bottom:6px;
+}
+* html hr {
+	margin-top:-6px;
+	position:relative;
+	top:6px;
+}
+
+form {
+	display:inline;
+}
+span.whiteSpacer {
+	font-size:8px;
+}
+select.medium {
+	width:145px;
+}
+input.medium {
+	width:145px;
+}
+option {
+	overflow: visible;
+	clip: auto;
+
+}
+
+
+div.clearFloats {
+	clear:both;
+	height:1px;
+	overflow:hidden;
+	margin-bottom:-1px;
+}
+/* LIST STYLES  */
+ul,ol {padding-top:5px;margin-top:0px;padding-bottom:10px;margin-bottom:0px;}
+ul ul, ol ol, ul ol, ol ul {padding-top:0px;padding-bottom:10px;margin-top:0px;margin-bottom:0px;}
+ul {margin-left: 22px; padding-left: 0px;}
+ol {margin-left: 22px; padding-left: 0px;}
+
+			 ul li,
+		ol ul li,
+ ol ul ul li,
+ ol ol ul li,
+ ul ol ul li
+ {
+	margin-bottom:2px;
+}
+			 ol li,
+		ul ol li,
+ ul ol ol li,
+ ul ul ol li,
+ ol ul ol li
+{
+	list-style-image:none;
+}
+ol li ol li {
+	list-style:lower-alpha;
+}
+ol li ol li ol li{
+	list-style:lower-roman;
+}
+
+
+.greyPanel {
+}
+div.pad10 {
+	padding:10px;
+}
+div.pad0x10 {
+	padding:0px 10px;
+}
+div.pad7x0 {
+	padding:7px 0px;
+}
+div.pad0x5 {
+	padding:0px 5px;
+}
+table.pad1x10{
+	margin:1px 5px;
+} 
+
+span.sp7 {
+	font-size:6px;
+	height:7px;
+	overflow:hidden;
+}
+span.sp10 {
+	font-size:9px;
+	height:9px;
+	overflow:hidden;
+}
+table.pad1x10 td,table.pad1x10 th {
+	padding:1px 5px;
+} 
+
+
+
+div.titleBar {
+	background-color:#666666;
+	border-bottom:3px solid #484848;
+	
+	padding:1px 4px 1px 10px;
+}
+div.titleBar td {
+	color:#fff;
+	font-weight:bold;
+	font-size:110%;
+}
+
+
+/* Terminal Window */
+
+div.terminalWindow {
+	height:200px;
+	overflow:auto;
+	background:#eee;
+	border:1px solid #666;
+	padding:2px 10px;
+	font-size:12px;
+}
+
+
+/* Application Masthead */
+
+table.applicationMastheadSmall,table.applicationMastheadSmall td,table.applicationMastheadLarge,table.applicationMastheadLarge td {
+	color:#fff;
+	vertical-align:top;
+}
+td.mastheadIcon{
+	padding-top:10px;
+	padding-left:17px;
+}
+td.mastheadTitle {
+	padding-top:8px;
+	padding-left:9px;
+}
+table.applicationMastheadLarge td.mastheadIcon {
+	padding-top:15px;
+	padding-left:17px;
+}
+table.applicationMastheadLarge td.mastheadTitle {
+	padding-top:16px;
+	padding-left:16px;
+}
+
+td.mastheadTitle h1{
+	padding:0px;
+	margin:0px;
+	padding-right:16px;
+	color:#fff;
+	white-space:nowrap;
+}
+table.applicationMastheadLarge td.mastheadTitle h1 {
+	font-size:200%;
+}
+div.mastheadPhoto {
+	background:#fff;
+	border-left:7px solid #fff;
+	float:right;
+}
+td.mastheadLinks {	
+	padding:5px 16px;
+	white-space:nowrap;
+	border-left:7px solid #fff;
+}
+table.applicationMastheadSmall a:link,table.applicationMastheadSmall a:visited,table.applicationMastheadSmall a:active,table.applicationMastheadSmall a:hover,
+table.applicationMastheadLarge a:link,table.applicationMastheadLarge a:visited,table.applicationMastheadLarge a:active,table.applicationMastheadLarge a:hover{
+	color:#fff;
+	text-decoration:underline;
+}
+
+
+
+
+/* Navigation Control */
+
+div.navigationControlOn,div.navigationControlOff,div.navigationControlHeader {
+
+	background-color:#fff;
+	padding: 3px 7px 4px 3px;
+}
+div.navigationControlOn {
+	background-color:#9cf;
+}
+div.navigationControlOff {
+	background-color:#fff;
+}
+
+div.navigationControlOn a:link,div.navigationControlOn a:visited,div.navigationControlOn a:active,div.navigationControlOn a:hover {
+	text-decoration:none;
+	color:#000;
+}
+div.navigationControlOff a:link,div.navigationControlOff a:visited,div.navigationControlOff a:active,div.navigationControlOff a:hover {
+	text-decoration:none;
+	color:#039;
+}
+div.navigationControlSpacer {
+	height:5px;
+	overflow:hidden;
+}
+div.navigationControlIcon {
+	float:left;
+	clear:both;
+	margin-top:2px;
+	padding-left:2px;
+}
+
+
+/*titles and subtitles*/
+h1.pageTitle {
+	margin-top:11px;
+	margin-bottom:8px;
+	margin-left:8px;
+}
+div.pageTitleRightArea {
+
+}
+h3.subTitle {
+	background-color:#666;
+	font-weight:bold;
+	color:#fff;
+	padding:2px 5px 2px 9px;
+	margin:0px;
+	font-size:100%;
+}
+div.subTitleBottomEdge {
+	height:3px;
+	overflow:hidden;
+	background:#484848;
+}
+div.subTitleIcon {
+	float:right;
+	margin-top:2px;
+}
+
+/* progress bar */
+
+
+div.progressBarLarge{
+	height:11px;
+	overflow:hidden;
+	width:320px;
+}
+
+div.progressBarSmall {
+	height:10px;
+	overflow:hidden;
+	width:150px;
+}
+
+
+
+
+/* tables */
+
+
+tr.captionRow th {
+	background-color:#968F89;
+	font-weight:bold;
+	text-align:left;
+	vertical-align:top;
+	padding:3px 5px 2px 5px;
+	color:#fff;	
+	border-right:1px solid #ccc;
+}
+caption { 
+	background-color:#716B66;
+	font-weight:bold;
+	text-align:left;
+	vertical-align:top;
+	padding:3px 5px 2px 5px;
+	color:#fff;	
+}
+caption.displayForAuralBrowsersOnly {
+	display:none;
+}
+/* table borders, shared by all tables */
+.dataTable, .treeTable, .propertyViewTable {
+	border:1px solid #968F89;
+	border-top-width:0px;
+	border-collapse:collapse;
+}
+.scrollingTable {
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+
+
+/* scrollingTable's left border is provided by it's scrollingTableDiv */
+.scrollingTable {
+	border-left-width:0px;
+}
+.dataTable td, .scrollingTable td, .treeTable td, .propertyViewTable td{
+	background-color:#eeeeee;
+	border-top:1px solid #ccc;
+	vertical-align:top;
+}
+/* tree table uses the altcolor for mainColor, and the main color for top-level rows*/
+.treeTable td {   
+	background-color:#f5f5f5;
+}
+
+/* table widths */
+.dataTable,.treeTable,.propertyViewTable {
+	width:100%;
+}
+
+/* table padding */
+.dataTable td.iconCell,.scrollingTable td.iconCell, .treeTable td.iconCell, .propertyViewTable td.iconCell,
+.dataTable th.iconCell,.scrollingTable th.iconCell, .treeTable th.iconCell, .propertyViewTable th.iconCell {
+	padding:1px 5px;
+}
+* html table.tableHasCheckboxes td.iconCell {
+	padding-top:3px;
+	padding-bottom:2px;
+}
+.dataTable th.checkboxCell,.scrollingTable th.checkboxCell, .treeTable th.checkboxCell, .propertyViewTable th.checkboxCell,
+.dataTable td.checkboxCell,.scrollingTable td.checkboxCell, .treeTable td.checkboxCell, .propertyViewTable td.checkboxCell{
+	padding:0px 5px;
+}
+.dataTable td.editableFieldCell,.scrollingTable td.editableFieldCell, .treeTable td.editableFieldCell, .propertyViewTable th.editableFieldCell,
+.dataTable th.editableFieldCell,.scrollingTable th.editableFieldCell, .treeTable th.editableFieldCell, .propertyViewTable th.editableFieldCell {
+	padding:2px 4px;
+}
+.dataTable td, .scrollingTable td, .treeTable td, .propertyViewTable td {
+	padding:2px 5px 1px 5px;
+}
+tr.summaryRow td{
+	background:#fff;
+}
+tr.summaryRow td {
+	border-top:1px solid #999;
+	text-align:right;
+	font-weight:bold;
+}
+tr td.rowSummaryCell,tr.altRowColor td.rowSummaryCell {
+	background: #F9F9F9;
+	font-weight:bold;
+	text-align:right;
+}
+
+
+
+
+/* table alignment */
+td.iconCell {
+	text-align:center;
+}
+.dataTable td.numericalCell,.dataTable th.numericalCell, .propertyViewTable th.numericalFieldCell {
+	text-align:right;
+}
+
+
+/* table links */
+tr.captionRow a:link,tr.captionRow a:visited,tr.captionRow a:active,tr.captionRow a:hover ,
+div.visualColumnHeader a:link,div.visualColumnHeader a:visited,div.visualColumnHeader a:active,div.visualColumnHeader a:hover {
+	color:#fff;
+	text-decoration:none;
+}
+
+
+
+
+
+/* table row colors */
+
+tr.altRowColor td { 
+	background-color:#f5f5f5;
+}
+.dataTable tr td.sorted, .scrollingTable tr td.sorted, .treeTable tr td.sorted, .propertyViewTable tr td.sorted {
+	background-color:#dfdfdf;
+}
+.dataTable th.sortedDescending, .scrollingTable th.sortedDescending, .propertyViewTable th.sortedDescending {
+	background-position:right top;
+	padding-right:20px;
+}
+.dataTable th.sortedAscending, .scrollingTable th.sortedAscending, .propertyViewTable th.sortedAscending {	
+	background-position:right top;
+	padding-right:20px;
+}
+
+th.sortable,th.sortedAscending,th.sortedDescending {
+	cursor:pointer;
+	cursor:hand;
+}
+
+
+.dataTable tr.rowHighlight td, .scrollingTable tr.rowHighlight td, .treeTable tr.rowHighlight td, .propertyViewTable tr.rowHighlight td{
+	background-color:#9cf;
+}
+
+
+
+
+/* for scrolling tables. */
+table.scrollingTable {
+	width:100%;
+}
+tr.readerCaptionRow {
+	display:none;
+}
+tr.dummyRow td {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+tr.dummyRow div{
+	height:1px;
+	overflow:hidden;
+}
+
+tr.readerCaptionRow th input {
+	display:none;
+}
+.scrollingTableDiv {
+	clear:both;
+	overflow:auto; 
+	width:100%;
+	border:1px solid #968F89;
+	border-top-width:0px;
+	margin-bottom:10px;
+
+}
+div.headerDivOuter {
+	overflow:hidden;
+	background-color:#968F89;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+div.headerDivInner {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:20px;
+}
+div.visualColumnHeader {
+	float:left;
+	overflow:visible !important;
+	background-color:#968F89;
+	font-weight:bold;
+	text-align:left;
+	color:#fff;
+	border-right:1px solid #fff;
+}
+
+
+
+
+
+
+/* links */
+a:link, a:visited, a:active, a:hover {
+	color:#039;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+
+
+/* Tabs */
+
+div.tabSet, div.secondaryTabSet {
+	clear:both;
+}
+div.tabSet {
+}
+div.secondaryTabSet {
+	width:100%;
+}
+* html div.tabSet, * html div.secondaryTabSet {
+	float:left;
+}
+div.tabOff,div.tabOn {
+	float:left;
+	text-align:center;
+	height:14px;
+	font-weight:bold;
+	white-space:nowrap;
+}
+div.tabOff {
+/* background color and background image are a part of the theme css */
+
+	color:#fff;
+	padding:2px 13px 4px 10px;
+	border-bottom:2px solid #fff;
+	border-right:2px solid #fff;
+
+	cursor:pointer;
+	cursor:hand;
+}
+div.tabOn {
+	background-color:#ccc;
+	color:#333;
+	padding:2px 13px 6px 10px;
+	border-right:3px solid #fff;
+	border-left:1px solid #fff;
+}
+div.tabOff a:link,
+div.tabOff a:visited,
+div.tabOff a:active,
+div.tabOff a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+div.tabOn a:link,
+div.tabOn a:active,
+div.tabOn a:visited,
+div.tabOn a:hover{
+	color:#333;
+	text-decoration:none;
+}
+div.secondaryTabSet div.tabOn{
+	background-color:#fff;
+	border-right:3px solid #ccc;
+	border-left:1px solid #ccc;
+	height:
+}
+div.secondaryTabSet div.tabOff{
+	border-bottom:2px solid #ccc;
+	border-right:2px solid #ccc;
+}
+div.tabBottomLine {	
+	clear:both;
+	height:3px;
+	overflow:hidden;
+	background-color:#ccc;
+}
+div.tabOff {
+	min-width:90px;
+}
+div.tabOn {
+	min-width:88px;
+}
+div.secondaryTabSet div.tabOff{
+	min-width:62px;
+	padding:1px 13px 3px 10px;
+}
+div.secondaryTabSet div.tabOn{
+	min-width:60px;
+	padding:1px 13px 5px 10px;
+}
+
+/* Command Button */
+
+
+button.hpButton, 
+input.hpButton {
+	border-style:none;
+	height:18px;
+	color: #fff; 
+}
+/*
+works to eliminate the pushed-in button movement on mozilla, at the expense of an extra pixel of button jutting out on the left side during the pushed-in state.   
+button.hpButton:active,input.hpButton:active {
+	margin-left:-1px;
+	margin-right:1px;
+}
+*/
+
+button.hpButtonSmall,input.hpButtonSmall {
+	border-style:none;
+	padding:0px 4px;
+	height:16px;
+	color: #fff; 
+}
+button.hpButtonVerySmall,input.hpButtonVerySmall{
+	border-style:none;
+	padding:0px 2px;
+	height:11px;
+	font-size:9px;
+	color: #fff; 
+}
+button.helpButton,input.helpButton {
+	padding:0px 3px 0px 2px;
+	color: #fff; 
+}
+button.hpButton,
+button.hpButtonSmall,
+button.hpButtonVerySmall,
+input.hpButton,input.hpButtonSmall,
+input.hpButtonVerySmall {
+	position:relative;
+	left:-1px;
+	top:-1px;	
+/* background color a part of the theme css */
+	color: #fff; 
+	font-weight:bold;
+	text-decoration: none;   
+	font-family: Arial,sans-serif;
+	text-align:center;
+	cursor:pointer;
+	cursor:hand;
+}
+
+div.bWrapperUp,
+div.bWrapperOver,
+div.bWrapperDown,
+div.bWrapperDisabled {
+	float:right;
+	direction:ltr;
+	margin-left:8px;
+	margin-bottom:8px;
+}
+div.buttonSet {
+	float:right;
+	margin-bottom:10px;
+}
+div.buttonSet,div.verticalButtonSet {
+	padding-left:13px;
+}
+/* buttonsAreLeftAligned is a modifier class, modifying buttonSet */
+div.buttonsAreLeftAligned, div.buttonsAreLeftAligned div.bWrapperUp,div.buttonsAreLeftAligned div.bWrapperOver,div.buttonsAreLeftAligned div.bWrapperDown,div.buttonsAreLeftAligned div.bWrapperDisabled {
+	float:left;
+	margin-left:0px;
+	margin-right:8px;
+}
+
+
+
+div.verticalButtonSet {
+	padding-right:10px;
+}
+div.verticalButtonSet div.bWrapperUp,
+div.verticalButtonSet div.bWrapperOver,
+div.verticalButtonSet div.bWrapperDown,
+div.verticalButtonSet div.bWrapperDisabled {
+	float:none;
+	margin-left:0px;
+}
+
+
+
+/* this position relative css is what turns the three divs into the 3px slant effect */
+div.bWrapperUp div,div.bWrapperOver div,div.bWrapperDown div,div.bWrapperDisabled div{
+	position:relative;
+	left:-1px;
+	top:-1px;
+}
+
+
+
+/* TREE */
+
+
+
+/* height:auto , overflow visible  vs height 18px, overflow hidden, works for a while, but leads you into a nasty set of bugs with float:left, negative margins, and even negative relative positions. */
+/* this line is long and crazy cause we are combining two toggling states in one pair of classes, so there's a few combinations to take care of */
+div.treeClosed div.treeContents,
+div.treeOpen div.treeClosed div.treeContents,
+div.treeClosedSelected div.treeContents,
+div.treeOpenSelected div.treeClosed div.treeContents,
+div.treeOpen div.treeClosedSelected div.treeContents,
+div.treeOpenSelected div.treeClosedSelected div.treeContents {
+	display:none;
+}
+
+div.treeOpen div.treeContents,
+div.treeClosed div.treeOpen div.treeContents,
+div.treeOpenSelected div.treeContents,
+div.treeClosedSelected div.treeOpen div.treeContents,
+div.treeClosed div.treeOpenSelected div.treeContents,
+div.treeClosedSelected div.treeOpenSelected div.treeContents {
+	display:block;
+}
+div.treeOpen,div.treeOpenSelected,
+div.treeClosed,div.treeClosedSelected {
+	width:400px;
+}
+
+
+div.treeOpen,
+div.treeClosed,
+div.treeContents div.leaf,
+div.treeContents div.leafSelected, 
+div.treeTitle,
+div.treeCheckbox,
+div.treeStatusIcon,
+div.leafWrapper div{
+	white-space:nowrap;
+}
+
+
+div.treeWrapper {	
+	background:#fff;
+	padding:2px;
+	margin:0px;
+	overflow:auto;
+	border:1px solid #ccc;
+}	
+
+
+
+
+/*  the row divider style, consisting of empty divs of class treeBorder, placed between each element in the tree.*/
+div.treeBorder {
+clear:both;
+	height:1px;
+	overflow:hidden;
+	background:#EEEEEE;
+}
+div.treeThickBorder {
+clear:both;
+	height:3px;
+	overflow:hidden;
+	background:#EEEEEE;
+}
+
+
+div.treeControl {
+	height:13px;
+	margin-right:5px; 
+}
+/* Attempts to specify height as well as width can result in ie bugs with visibility of trees, if the height is too high. */
+div.treeDisclosure {
+	height:12px;
+	width:12px;
+	margin:0px;
+	padding:0px;
+	cursor:pointer;
+	cursor:hand;
+}
+/* various paddings and margins for alignment */
+
+div.treeDisclosure {
+	margin-top:2px;
+}
+
+* html div.treeHasCheckboxes div.treeDisclosure{
+	margin-top:4px;	
+}
+div.treeDisclosure {
+	margin-right:2px;
+}
+* html div.treeDisclosure {
+	margin-right:1px;
+}
+
+
+div.treeWrapper div.treeControl {
+	margin-right:3px; 
+}
+* html div.treeWrapper div.treeControl {
+	margin-right:0px; 
+}
+
+div.treeWrapper div.treeTitle {
+	padding-top:2px;
+}
+div.leaf,
+div.leafSelected {
+	padding-top:1px;
+}
+
+* html div.treeHasCheckboxes div.treeTitle,
+* html div.treeHasCheckboxes div.leaf,
+* html div.treeHasCheckboxes div.leafSelected{
+	padding-top:3px;
+}
+
+
+div.treeCheckbox{
+	padding-top:2px;
+}
+* html div.treeCheckbox{
+	padding-top:0px;
+}
+div.treeStatusIcon {
+	padding-top:0px;
+}
+* html div.treeHasCheckboxes div.treeStatusIcon {
+	padding-top:3px;
+}
+div.treeIdentifierIconsAtDisclosurePosition div.leaf,
+div.treeIdentifierIconsAtDisclosurePosition div.leafSelected {
+	position:relative;
+	left:-17px;
+}
+img.treeIdentifierIcon {
+	vertical-align:middle;
+	margin-top:-1px;
+}
+
+div.treeCheckbox input {
+	margin:0px;
+	padding:0px;
+}
+
+/* ---------------------- */
+/*  TREE - HEIGHT AND WIDTH STYLES   */
+/* ---------------------- */
+
+
+
+/* setting of fixed heights is to resolve misalignments with float:left.   The more straightforward approach of setting clear:both on appropriate elements unfortunately exposes browser bugs.*/
+/* taking out leafWrapper causes float problems of wrapping against checkboxes. */
+div.leafWrapper,
+div.leafWrapperSelected,
+div.treeControl {
+	height:17px;
+}
+
+
+/*  strange enough to take note of: removing treeTitle can cause problems on IE with dissappearing elements */
+* html div.treeHasCheckboxes div.leafWrapper,
+* html div.treeHasCheckboxes div.leafWrapperSelected{
+	height:20px;
+}
+
+div.treeWrapper div.treeTitle {
+	height:15px;
+}
+div.leaf,
+div.leafSelected {
+	height:16px;
+}
+* html div.leaf,
+* html div.leafSelected {
+	height:17px;
+}
+
+* html div.treeHasCheckboxes div.treeTitle {
+	height:17px;
+}
+
+* html div.treeHasCheckboxes div.leaf,
+* html div.treeHasCheckboxes div.leafSelected {
+	height:20px;
+}
+
+
+div.treeCheckbox {
+	width:20px;
+	margin-left:3px;
+}
+* html div.treeCheckbox {
+	width:24px;
+	margin-left:-1px;
+}
+
+div.treeStatusIcon {
+	padding-left:2px;
+	width:22px;
+}
+
+
+
+/* ---------------------- */
+/*  TREE - FLOAT AND CLEAR STYLES */
+/* ---------------------- */
+div.treeControl,div.leafWrapper{
+	clear:both;
+}
+div.treeDisclosure {
+	float:right;
+}
+
+div.treeCheckbox,div.treeStatusIcon,div.treeIdentifierIcon {
+	float:left;
+}
+div.treeOpen div.treeControl, div.treeOpenSelected div.treeControl {
+	float:left;
+}
+div.treeClosed div.treeControl, div.treeClosedSelected div.treeControl {
+	float:left;
+}
+/* caveat: combining float left on treeTitle and clear both on treeContents causes extra whitespace problems in mozilla when closing all trees. 
+our solution is to set all the element heights to the same value, so that the last element of a float will reset all the way back to the left edge*/
+div.treeContents {
+	clear:both;
+}
+div.treeMasterCheckbox {
+	float:left;
+	margin-top:-5px;
+	padding-left:2px;
+	margin-bottom:2px;
+}
+
+/* ------------------------- */
+/*  TREE - BACKGROUND  STYLES */
+/* ------------------------- */
+
+
+div.leafWrapperSelected {
+	background:#9cf;
+}
+
+div.leafSelected {
+	background:#9cf;
+}
+div.treeClosedSelected,div.treeOpenSelected {
+	background:#9cf;
+}
+div.treeOpenSelected div.treeContents {
+	background:#fff;
+}
+/* on the treeHasNavigationHighlighting, you dont want highlighting to go behind any checkboxes or status icons*/
+div.treeCheckbox, div.treeStatusIcon, div.treeControl {
+	background:#fff;
+}
+div.treeHasCheckboxHighlighting div.treeCheckbox, 
+div.treeHasCheckboxHighlighting div.treeStatusIcon,
+div.treeHasCheckboxHighlighting div.treeControl {
+	background:transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------  */
+/*  TREE - INSETS FOR VARIOUS LEVELS OF NESTING */
+/* -------------------------------------  */
+div.treeControl {
+	width:17px;
+}
+
+div.treeContents div.treeControl {
+	width:34px;
+}
+div.treeContents div.treeContents div.treeControl {
+	width:51px;
+}
+div.treeContents div.treeContents div.treeContents div.treeControl {
+	width:68px;
+}
+div.treeContents div.treeContents div.treeContents div.treeContents div.treeControl {
+	width:85px;
+}
+div.leaf,
+div.leafSelected {
+	margin-left:17px;
+	padding-left:3px;
+}
+div.treeContents div.leaf,
+div.treeContents div.leafSelected {
+	margin-left:34px;
+}
+div.treeContents div.treeContents div.leaf,
+div.treeContents div.treeContents div.leafSelected {
+	margin-left:51px;
+}
+div.treeContents div.treeContents div.treeContents div.leaf,
+div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:68px;
+}
+div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:85px;
+}
+div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:102px;
+}
+
+/* same deal, but with spacing to include one icon or one checkbox per row, there's more space.  */
+div.treeHasOneIconSpacing div.treeControl {
+	width:40px;	
+}
+div.treeHasOneIconSpacing div.treeContents div.treeControl {
+	width:57px;
+}
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeControl {
+	width:74px;
+}
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeControl {
+	width:91px;
+}
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.treeControl {
+	width:108px;
+}
+
+
+
+
+
+
+div.treeHasOneIconSpacing div.leaf,
+div.treeHasOneIconSpacing div.leafSelected{
+	margin-left:40px;
+}
+div.treeHasOneIconSpacing div.treeContents div.leaf,
+div.treeHasOneIconSpacing div.treeContents div.leafSelected{
+	margin-left:57px;
+}
+
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.leaf,
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.leafSelected {
+	margin-left:74px;
+}
+
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.leaf,
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:91px;
+}
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:108px;
+}
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:125px;
+}
+
+
+* html div.treeHasOneIconSpacing div.leaf,
+* html div.treeHasOneIconSpacing div.leafSelected{
+	margin-left:37px;
+}
+
+* html div.treeHasOneIconSpacing div.treeContents div.leaf,
+* html div.treeHasOneIconSpacing div.treeContents div.leafSelected{
+	margin-left:54px;
+}
+
+* html div.treeHasOneIconSpacing div.treeContents div.treeContents div.leaf,
+* html div.treeHasOneIconSpacing div.treeContents div.treeContents div.leafSelected {
+	margin-left:71px;
+}
+
+* html div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.leaf,
+* html div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:88px;
+}
+* html div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+* html div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:105px;
+}
+* html div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+* html div.treeHasOneIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:122px;
+}
+
+
+
+/* same deal, but with spacing to include two icons or checkboxes per row, there's more space (Specifically, the two legal combinations are icon + icon and   checkbox+icon ).  */
+div.treeHasTwoIconSpacing  div.treeOpen div.treeControl, 
+div.treeHasTwoIconSpacing  div.treeOpenSelected div.treeControl,
+div.treeHasTwoIconSpacing  div.treeClosed div.treeControl, 
+div.treeHasTwoIconSpacing  div.treeClosedSelected div.treeControl{
+	width:63px;
+}
+div.treeHasTwoIconSpacing  div.treeContents div.treeControl {
+	width:80px;
+}
+div.treeHasTwoIconSpacing  div.treeContents div.treeContents div.treeControl {
+	width:97px;
+}
+div.treeHasTwoIconSpacing  div.treeContents div.treeContents div.treeContents div.treeControl {
+	width:114px;
+}
+div.treeHasTwoIconSpacing  div.treeContents div.treeContents div.treeContents div.treeContents div.treeControl {
+	width:131px;
+}
+
+
+div.treeHasTwoIconSpacing div.leaf,
+div.treeHasTwoIconSpacing div.leafSelected{
+	margin-left:63px;
+}
+div.treeHasTwoIconSpacing div.treeContents div.leaf,
+div.treeHasTwoIconSpacing div.treeContents div.leafSelected{
+	margin-left:80px;
+}
+div.treeHasTwoIconSpacing div.treeContents div.treeContents div.leaf,
+div.treeHasTwoIconSpacing div.treeContents div.treeContents div.leafSelected {
+	margin-left:97px;
+}
+div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.leaf,
+div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:114px;
+}
+div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:131px;
+}
+div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:148px;
+}
+
+
+* html div.treeHasTwoIconSpacing div.leaf,
+* html div.treeHasTwoIconSpacing div.leafSelected{
+	margin-left:60px;
+}
+* html div.treeHasTwoIconSpacing div.treeContents div.leaf,
+* html div.treeHasTwoIconSpacing div.treeContents div.leafSelected{
+	margin-left:77px;
+}
+* html div.treeHasTwoIconSpacing div.treeContents div.treeContents div.leaf,
+* html div.treeHasTwoIconSpacing div.treeContents div.treeContents div.leafSelected {
+	margin-left:94px;
+}
+* html div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.leaf,
+* html div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:111px;
+}
+* html div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+* html div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:128px;
+}
+* html div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leaf,
+* html div.treeHasTwoIconSpacing div.treeContents div.treeContents div.treeContents div.treeContents div.treeContents div.leafSelected {
+	margin-left:145px;
+}
+
+
+
+
+
+
+
+/* dropdown menu */
+
+td.dropdownNavBottomBorder div {
+/* background is a part of the theme css */
+	width:3px;
+	height:3px;
+	overflow:hidden;
+}
+
+td.dropdownNavRightBorder div {
+/* background is a part of the theme css */
+	width:3px;
+	height:4px;
+}
+ul.dropdownMenu {
+	visibility:hidden;
+	position:absolute;
+	z-index:30;
+/* border and border color is a part of the theme css */
+	background-color:#fff;
+	margin:0px;
+	padding:3px 0px 4px 0px;
+}
+ul.dropdownMenu li {
+	background-color:#fff;
+	margin:0px;
+	padding:0px 16px 1px 17px;
+	color:#000;
+	font-size:105%;
+	list-style-image:none;
+	list-style-type:none;
+	cursor:pointer;
+	cursor:hand;
+	font-weight:normal;
+}
+ul.dropdownMenu ul.dropDownMenu li {
+	font-size:100%;
+}
+ul.dropdownMenu li.disabled,
+ul.dropdownMenu li.disabled a:link,
+ul.dropdownMenu li.disabled a:visited,
+ul.dropdownMenu li.disabled a:active,
+ul.dropdownMenu li.disabled a:hover {
+	color:#999;
+}
+div.dropdownMenuItemChecked,div.dropdownMenuItemUnchecked {
+	float:left;
+	width:11px;
+	height:11px;
+	overflow:hidden;
+	margin-top:1px;
+	margin-left:-12px;
+	margin-right:-4px;
+}
+/* the background-image is a part of the theme css */
+* html div.dropdownMenuItemChecked,
+* html div.dropdownMenuItemUnchecked {
+	margin-left:-6px;
+	margin-right:-2px;
+}
+
+div.globalNavTrigger,div.globalNavTriggerOver {
+	height:18px;
+	margin-bottom:0px;
+	float:left;
+/* background colors are part of the theme css */
+	color:#fff;
+	font-weight:bold;
+	padding-top:2px;
+	padding-left:10px;
+	padding-right:19px;
+	white-space:nowrap;
+}
+div.localNavTrigger,div.localNavTriggerOver {
+	height:18px;
+	margin-bottom:0px;
+	float:left;
+/* background color is a part of the theme css */
+	color:#fff;
+	font-weight:bold;
+	white-space:nowrap;
+
+	padding:2px 20px 0px 5px;
+}
+div.localNavTrigger {
+	background-position:right;
+	background-repeat:no-repeat;
+	color:#666;
+}
+div.localNavTriggerOver {
+	background-position:right;
+	background-repeat:no-repeat;
+	color:#fff;
+}
+li.subMenuTrigger {
+/* background image is a part of the theme css */
+}
+li.subMenuTriggerOver {
+/* background image is a part of the theme css */
+}
+ul.dropdownMenu li.subMenuTriggerOver {
+	color:#000;
+}
+ul.dropdownMenu a:link,
+ul.dropdownMenu a:visited,
+ul.dropdownMenu a:active,
+ul.dropdownMenu a:hover {
+	text-decoration:none;
+	color:#000;
+}
+td.dropdownNavBottomBorder div {
+	background-repeat:no-repeat;
+}
+
+td.dropdownNavRightBorder div {
+	background-repeat:no-repeat;
+}
+
+/* tree table */
+tr.treeTableTopLevel td{
+	background-color:#eeeeee;
+}
+
+tr.treeTableTitleRowOpen div.treeControl {		
+/* background image and other background properties are a part of the theme css */
+	margin:0px;
+	float:left;
+}
+tr.treeTableTitleRowClosed div.treeControl {		
+	/* background image and other background properties are a part of the theme css */
+	margin:0px;
+	float:left;
+}
+/* fixed height for tree Elements doesnt apply to Tree Tables */
+* html table.treeTable div.treeControl {
+	height:auto;
+}
+tr.treeTableTitleRowOpen div.treeControl,
+tr.treeTableTitleRowClosed div.treeControl {
+	width:13px;
+	margin-right:3px;
+}
+* html tr.treeTableTitleRowOpen div.treeControl,
+* html tr.treeTableTitleRowClosed div.treeControl {
+	margin-right:0px;
+}
+
+tr.treeTableTitleRowClosed div.treeTitle, tr.treeTableTitleRowOpen div.treeTitle {
+	padding-bottom:0px;
+	white-space:auto;
+}
+td.nested1,
+td.nested2,
+td.nested3,
+td.nested4,
+td.nested5{
+	padding-right:10px;
+}
+
+td.nested1 {
+	padding-left:	21px;
+}
+td.nested2 {
+	padding-left:	38px;
+}
+td.nested3 {
+	padding-left:	55px;
+}
+td.nested4 {
+	padding-left:	72px;
+}
+td.nested5 {
+	padding-left:	89px;
+}
+td.nested1 div.treeTitle,
+td.nested2 div.treeTitle,
+td.nested3 div.treeTitle,
+td.nested4 div.treeTitle,
+td.nested5 div.treeTitle{
+	margin-left:-16px;
+}
+
+
+/*  transfer box */
+
+form.transferBox {
+	/* empty for now */
+}

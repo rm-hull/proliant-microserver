@@ -1,0 +1,157 @@
+
+
+
+
+/* Tabs */
+div.tabOff {
+	background-color:#7591AC;
+	background-image:url(../images/themes/blue/tab_right.gif);
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+div.secondaryTabSet div.tabOff {
+	background-color:#7591AC;
+	background-image:url(../images/themes/blue/tab_secondary_right.gif);
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+button.hpButton,
+button.hpButtonSmall,
+button.hpButtonVerySmall,
+input.hpButton,
+input.hpButtonSmall,
+input.hpButtonVerySmall {
+	background-color: #7591AC;
+}
+div.bEmphasized button,
+div.bEmphasized input,
+div.bEmphasized submit{
+	background-color:#335C85;
+	color:#fff;
+}
+
+/* these are the right and bottom edge colors for the various states */
+div.bWrapperUp,
+div.bWrapperUp div{
+	background-color:#3F658C;
+}
+div.bWrapperDown,
+div.bWrapperDown div{
+	background-color:#003366;
+}
+div.bEmphasized,
+div.bEmphasized div {
+	background-color:#003366;
+}
+div.bWrapperDisabled,
+div.bWrapperDisabled div{
+	background-color:#ADADAD;
+}
+div.bWrapperOver,
+div.bWrapperOver div{
+	background-color:#1164BA;
+}
+
+/* these are the background colors for the button face states. */
+div.bWrapperOver button,
+div.bWrapperOver input,
+div.bWrapperOver submit {
+	background-color:#5391CD;
+	color:#fff;
+}
+div.bWrapperDown button,
+div.bWrapperDown input,
+div.bWrapperDown submit {
+	background-color:#335C85;
+	color:#fff;
+}
+div.bWrapperDisabled button,
+div.bWrapperDisabled input,
+div.bWrapperDisabled submit {
+	background-color:#c1c1c1;
+	color:#fff;
+}
+
+
+div.treeOpen div.treeDisclosure,
+div.treeOpenSelected div.treeDisclosure {
+	background-image:url(../images/themes/blue/button_tree_contract.gif);
+}
+div.treeClosed div.treeDisclosure,
+div.treeClosedSelected div.treeDisclosure {
+	background-image:url(../images/themes/blue/button_tree_expand.gif);
+}
+div.treeDisclosure{
+	background-repeat:no-repeat;
+}
+
+
+
+
+
+
+td.dropdownNavMainCell {
+	background-color:#7591AC;
+	width:100%;
+}
+td.dropdownNavRightBorder {
+	background-color:#036;
+	vertical-align:top;
+}
+td.dropdownNavBottomBorder {
+	background-color:#036;
+}
+
+ul.dropdownMenu {
+	border:1px solid #036;
+}
+
+div.dropdownMenuItemChecked {
+	background:url(../images/themes/blue/navbar_checkbox.gif);
+}
+div.globalNavTrigger {
+	background-color:#7591AC;
+}
+li.subMenuTrigger {
+	background:url(../images/themes/blue/navbar_parent_bg.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+li.subMenuTriggerOver {
+	background:url(../images/themes/blue/navbar_parent_bg_over.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+div.globalNavTrigger {
+	background:url(../images/themes/blue/navbar_global_trigger_bg.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+div.globalNavTriggerOver {
+	background:url(../images/themes/blue/navbar_global_trigger_over_bg.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+
+
+tr.treeTableTitleRowOpen div.treeControl {		
+	background:transparent;
+	background-image:url(../images/themes/blue/button_tree_contract.gif);
+	background-position: 0px 1px;
+	background-repeat:no-repeat;
+}
+tr.treeTableTitleRowClosed div.treeControl {		
+	background:transparent;
+	background-image:url(../images/themes/blue/button_tree_expand.gif);
+	background-position: 0px 1px;
+	background-repeat:no-repeat;
+}
+
+table.applicationMastheadSmall,
+table.applicationMastheadSmall td,
+table.applicationMastheadLarge,
+table.applicationMastheadLarge td {
+	background-color:#036;
+}
